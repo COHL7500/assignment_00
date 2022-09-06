@@ -52,4 +52,4 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test assignment0tests/assignment0tests.csproj
+        run: dotnet test assignment00_test/assignment00_test.csproj
