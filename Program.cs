@@ -10,7 +10,7 @@ public class Program
     {
         if(year < 1582) 
         {
-            throw new IOException("Value must be equal or above 1582!");
+            throw new ArgumentOutOfRangeException(nameof(year), "Value must be equal or above 1582!");
         }
         
         return year % 4 == 0;

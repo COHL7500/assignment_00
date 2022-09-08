@@ -1,6 +1,7 @@
 using Xunit;
 using System;
 using System.IO;
+using FluentAssertions;
 namespace assignment00_test;
 
 public class UnitTest1
@@ -10,24 +11,29 @@ public class UnitTest1
     {
         // Arrange
 
-        bool Is_2004_LeapYear;
-        bool Is_4223_LeapYear; 
+        bool is2004LeapYear;
+        bool is4223LeapYear; 
 
         // Act
 
-        Is_2004_LeapYear = Program.IsLeapYear(2004);
-        Is_4223_LeapYear = Program.IsLeapYear(4223);
+        is2004LeapYear = Program.IsLeapYear(2004);
+        is4223LeapYear = Program.IsLeapYear(4223);
 
         // Assert
+        is2004LeapYear.Should()
+            .BeTrue();
         
-        Assert.Equal(true, Is_2004_LeapYear);
-        Assert.Equal(false, Is_4223_LeapYear);
+        is4223LeapYear.Should()
+            .BeFalse();
     }
 
     [Fact]
     public void LeapYear_RaiseException_IfBelow1582()
     {
-        Assert.Throws<IOException>(() => Program.IsLeapYear(1581));
+        Action act = () => Program.IsLeapYear(1581);
+
+        act.Should()
+            .Throw<ArgumentOutOfRangeException>();
     }
 
 	[Fact]
@@ -42,12 +48,12 @@ public class UnitTest1
                 Console.SetOut(sw);
                 Console.SetIn(sr);
 
-                Console.WriteLine();
-
                 Program.UserInput();
 
                 var result = sw.ToString().TrimStart();
-                Assert.Equal("yay", result);
+                
+                result.Should()
+                    .Be("yay");
             }
         }
 	}

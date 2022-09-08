@@ -16,3 +16,7 @@
 /Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/obj/Debug/net6.0/ref/assignment_00.dll
 /Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/obj/Debug/net6.0/assignment_00.pdb
 /Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/obj/Debug/net6.0/assignment_00.genruntimeconfig.cache
+/Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/bin/Debug/net6.0/FluentAssertions.dll
+/Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll

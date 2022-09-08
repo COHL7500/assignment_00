@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/1YOuFl5bK+4UG5lGnQY706QYlPdZIwarT1d7tUhg/2p/+X1n0BDw3XjC1+PsnelUVXkszemLJ+uZHz8XtcvbQ==",
+  "dgSpecHash": "DP8L7UeYrO+2KvYjs3Z5iaIGC21Fqbx8uDp4JkivHAyzRC3B40GQXmsbnmsYKGRXFCbVf0Wl6y1HsBfAXwMhCg==",
   "success": true,
   "projectFilePath": "/Users/bastjansejberg/Library/CloudStorage/OneDrive-ITU/BSc-Semester-3/BDSA/Assignment/assignment_00/assignment_00.csproj",
   "expectedPackageFiles": [
+    "/Users/bastjansejberg/.nuget/packages/fluentassertions/6.7.0/fluentassertions.6.7.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
@@ -28,6 +29,7 @@
     "/Users/bastjansejberg/.nuget/packages/system.buffers/4.3.0/system.buffers.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg.sha512",
+    "/Users/bastjansejberg/.nuget/packages/system.configuration.configurationmanager/4.4.0/system.configuration.configurationmanager.4.4.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.console/4.3.0/system.console.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
@@ -67,6 +69,7 @@
     "/Users/bastjansejberg/.nuget/packages/system.security.cryptography.encoding/4.3.0/system.security.cryptography.encoding.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.security.cryptography.openssl/4.3.0/system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.security.cryptography.primitives/4.3.0/system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "/Users/bastjansejberg/.nuget/packages/system.security.cryptography.protecteddata/4.4.0/system.security.cryptography.protecteddata.4.4.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg.sha512",
     "/Users/bastjansejberg/.nuget/packages/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg.sha512",
