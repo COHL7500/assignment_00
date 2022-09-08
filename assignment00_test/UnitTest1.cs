@@ -1,6 +1,7 @@
 using Xunit;
 using System;
 using System.IO;
+using assignment_00;
 using FluentAssertions;
 namespace assignment00_test;
 
@@ -39,11 +40,11 @@ public class UnitTest1
 	[Fact]
 	public void UserInput_OutputIsCorrect() 
 	{
-        string Input = "2004";
+        string input = "2004";
 
         using (var sw = new StringWriter())
         {
-            using (var sr = new StringReader(Input))
+            using (var sr = new StringReader(input))
             {
                 Console.SetOut(sw);
                 Console.SetIn(sr);

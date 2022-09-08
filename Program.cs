@@ -1,8 +1,8 @@
-﻿using System;
+﻿namespace assignment_00;
 
 public class Program
 {
-    static void Main(String[] args)
+    private static void Main(String[] args)
     {
         Console.WriteLine("Hello World!");
     }
@@ -16,18 +16,18 @@ public class Program
         return year % 4 == 0;
     }
 
-	public static void UserInput()
-	{
+    public static void UserInput()
+    {
         string? yearInput = Console.ReadLine();
         
         if(string.IsNullOrEmpty(yearInput)) { return; }
 
         if (int.TryParse(yearInput, out int year))
         {
-             Console.Write(IsLeapYear(year) ? "yay" : "nay");
-             return;
+            Console.Write(IsLeapYear(year) ? "yay" : "nay");
+            return;
         }
 
         Console.WriteLine("Cannot convert input to int.\nPlease provide a number");
-	}
+    }
 }
