@@ -1,7 +1,6 @@
 using Xunit;
 using System;
 using System.IO;
-
 namespace assignment00_test;
 
 public class UnitTest1
@@ -25,23 +24,31 @@ public class UnitTest1
         Assert.Equal(false, Is_4223_LeapYear);
     }
 
+    [Fact]
+    public void LeapYear_RaiseException_IfBelow1582()
+    {
+        Assert.Throws<IOException>(() => Program.IsLeapYear(1581));
+    }
+
 	[Fact]
-	public void IsUserInputOutputCorrectTest() 
+	public void UserInput_OutputIsCorrect() 
 	{
-		// Arrange
-		string Input = "2004";
+        string Input = "2004";
 
-        var stringWriter = new StringWriter();
-        Console.SetOut(stringWriter);
+        using (var sw = new StringWriter())
+        {
+            using (var sr = new StringReader(Input))
+            {
+                Console.SetOut(sw);
+                Console.SetIn(sr);
 
-        var stringReader = new StringReader(Input);
-        Console.SetIn(stringReader);
+                Console.WriteLine();
 
-		// Act
-        Program.UserInput();
+                Program.UserInput();
 
-		// Assert
-        var output = stringWriter.ToString().TrimEnd();
-		Assert.Equal("yay", output);
+                var result = sw.ToString().TrimStart();
+                Assert.Equal("yay", result);
+            }
+        }
 	}
 }
