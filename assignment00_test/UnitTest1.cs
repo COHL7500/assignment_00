@@ -8,17 +8,11 @@ namespace assignment00_test;
 public class UnitTest1
 {
     [Fact]
-    public void IsLeapYearDivisibleByFourTest()
+    public void IsLeapYear_given_2004_true_and_4223_false()
     {
-        // Arrange
-
-        bool is2004LeapYear;
-        bool is4223LeapYear; 
-
         // Act
-
-        is2004LeapYear = Program.IsLeapYear(2004);
-        is4223LeapYear = Program.IsLeapYear(4223);
+        bool is2004LeapYear = Program.IsLeapYear(2004);
+        bool is4223LeapYear = Program.IsLeapYear(4223);
 
         // Assert
         is2004LeapYear.Should()
@@ -29,7 +23,7 @@ public class UnitTest1
     }
 
     [Fact]
-    public void LeapYear_RaiseException_IfBelow1582()
+    public void IsLeapYear_Raises_Exception_If_Below_1582()
     {
         Action act = () => Program.IsLeapYear(1581);
 
@@ -38,24 +32,24 @@ public class UnitTest1
     }
 
 	[Fact]
-	public void UserInput_OutputIsCorrect() 
-	{
-        string input = "2004";
+	public void UserInput_given_2004_outputs_yay()
+    {
+        // Arrange
+        const string input = "2004";
 
-        using (var sw = new StringWriter())
-        {
-            using (var sr = new StringReader(input))
-            {
-                Console.SetOut(sw);
-                Console.SetIn(sr);
+        using var sw = new StringWriter();
+        using var sr = new StringReader(input);
 
-                Program.UserInput();
+        Console.SetOut(sw);
+        Console.SetIn(sr);
 
-                var result = sw.ToString().TrimStart();
+        // Act
+        Program.UserInput();
+
+        string result = sw.ToString().TrimStart();
                 
-                result.Should()
-                    .Be("yay");
-            }
-        }
-	}
+        // Assert
+        result.Should()
+            .Be("yay");
+    }
 }

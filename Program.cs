@@ -1,8 +1,8 @@
 ﻿namespace assignment_00;
 
-public class Program
+public static class Program
 {
-    private static void Main(String[] args)
+    private static void Main()
     {
         Console.WriteLine("Hello World!");
     }
@@ -20,7 +20,10 @@ public class Program
     {
         string? yearInput = Console.ReadLine();
         
-        if(string.IsNullOrEmpty(yearInput)) { return; }
+        if(string.IsNullOrEmpty(yearInput))
+        {
+            return;
+        }
 
         if (int.TryParse(yearInput, out int year))
         {
